@@ -1,0 +1,25 @@
+# Composer
+/vendor/
+composer.lock
+
+# WordPress temporary files
+wp-content/
+*.log
+
+# OS & IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Build & Archives
+*.zip
+dist/
+build/
+
+# PHPUnit & Testing
+.phpunit.result.cache
+coverage/
+.phpcs-cache

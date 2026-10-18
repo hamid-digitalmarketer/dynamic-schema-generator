@@ -1,0 +1,32 @@
+{
+  "name": "hamid-digitalmarketer/dynamic-schema-generator",
+  "description": "Dynamic Schema Generator for WordPress: Automated, accurate JSON-LD Schema.org structured data engine with Elementor integration.",
+  "type": "wordpress-plugin",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Muhammad Hamid",
+      "homepage": "https://hamid-resume.web.app/"
+    }
+  ],
+  "require": {
+    "php": ">=7.4"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.5 || ^10.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "DSG\\": "includes/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "DSG\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": "phpunit",
+    "lint": "find . -name '*.php' ! -path './vendor/*' -exec php -l {} \\;"
+  }
+}

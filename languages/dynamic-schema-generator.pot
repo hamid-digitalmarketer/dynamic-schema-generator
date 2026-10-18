@@ -1,0 +1,45 @@
+# Copyright (C) 2026 Muhammad Hamid
+# This file is distributed under the same license as the Dynamic Schema Generator for WordPress plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Dynamic Schema Generator for WordPress 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/hamid-digitalmarketer/dynamic-schema-generator/issues\n"
+"Last-Translator: Muhammad Hamid <https://wa.me/923167417135>\n"
+"Language-Team: English (United States)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-10-18T20:00:00+00:00\n"
+"PO-Revision-Date: 2026-10-18T20:00:00+00:00\n"
+"X-Generator: Dynamic Schema Generator POT Generator\n"
+"X-Domain: dynamic-schema-generator\n"
+
+msgid "Dynamic Schema Generator"
+msgstr ""
+
+msgid "Automated, production-grade JSON-LD Schema.org structured data engine with Elementor integration."
+msgstr ""
+
+msgid "Business Information"
+msgstr ""
+
+msgid "Schema Settings"
+msgstr ""
+
+msgid "Services"
+msgstr ""
+
+msgid "FAQs"
+msgstr ""
+
+msgid "Elementor"
+msgstr ""
+
+msgid "Schema Preview"
+msgstr ""
+
+msgid "Diagnostics"
+msgstr ""
+
+msgid "Documentation"
+msgstr ""

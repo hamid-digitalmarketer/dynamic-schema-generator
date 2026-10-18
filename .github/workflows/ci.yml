@@ -1,0 +1,40 @@
+name: CI & Plugin Quality Assurance
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: PHP ${{ matrix.php }} Test Suite
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        php: ['7.4', '8.0', '8.1', '8.2', '8.3']
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+          extensions: json, mbstring, dom, libxml
+          coverage: none
+
+      - name: Validate composer.json
+        run: composer validate --strict
+
+      - name: Syntax Lint (php -l)
+        run: |
+          find . -name "*.php" ! -path "./vendor/*" -print0 | xargs -0 -n 1 -P 4 php -l
+
+      - name: Run Test Suite
+        run: php tests/run-tests.php
